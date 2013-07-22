@@ -32,6 +32,23 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# Use Bootstrap for themes
+gem "bootstrap-sass", "~> 2.3.2.0"
+
+# Use devise for authentication
+gem "devise", "~> 3.0.0.rc"
+
+# Use simple_form for create forms
+gem "simple_form", "~> 3.0.0.rc"
+
+group :development do
+  gem 'sqlite3'
+  gem "better_errors"
+  gem "binding_of_caller"
+end
+
+gem 'friendly_id', github: 'FriendlyId/friendly_id', branch: 'master' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
