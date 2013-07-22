@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130722041247) do
+ActiveRecord::Schema.define(version: 20130722060951) do
+
+  create_table "menu_items", force: true do |t|
+    t.string   "title"
+    t.integer  "page_id"
+    t.integer  "order"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "pages", force: true do |t|
     t.string   "slug"

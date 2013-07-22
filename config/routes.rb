@@ -1,6 +1,8 @@
 Strtaquara::Application.routes.draw do
   devise_for :users
 
+  resources :menu_items
+
   resources :pages
   get '/:slug', to: 'pages#show'
 
